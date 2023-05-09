@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellingForm));
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.SellerName = new System.Windows.Forms.Label();
             this.usdlbl = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ordergrd = new System.Windows.Forms.DataGridView();
@@ -60,11 +60,12 @@
             this.BillID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.SellerName = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.button10 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordergrd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodgrd2)).BeginInit();
@@ -118,6 +119,19 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(420, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 27);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Delete order";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -129,18 +143,6 @@
             this.label8.Size = new System.Drawing.Size(52, 25);
             this.label8.TabIndex = 36;
             this.label8.Text = "USD";
-            // 
-            // SellerName
-            // 
-            this.SellerName.AutoSize = true;
-            this.SellerName.BackColor = System.Drawing.Color.Transparent;
-            this.SellerName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SellerName.ForeColor = System.Drawing.Color.Black;
-            this.SellerName.Location = new System.Drawing.Point(65, 116);
-            this.SellerName.Name = "SellerName";
-            this.SellerName.Size = new System.Drawing.Size(50, 19);
-            this.SellerName.TabIndex = 35;
-            this.SellerName.Text = "Seller";
             // 
             // usdlbl
             // 
@@ -418,6 +420,18 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "SELLING";
             // 
+            // SellerName
+            // 
+            this.SellerName.AutoSize = true;
+            this.SellerName.BackColor = System.Drawing.Color.Transparent;
+            this.SellerName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerName.ForeColor = System.Drawing.Color.Black;
+            this.SellerName.Location = new System.Drawing.Point(65, 116);
+            this.SellerName.Name = "SellerName";
+            this.SellerName.Size = new System.Drawing.Size(50, 19);
+            this.SellerName.TabIndex = 35;
+            this.SellerName.Text = "Seller";
+            // 
             // printPreviewDialog1
             // 
             this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
@@ -446,19 +460,6 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(420, 267);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 27);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Delete order";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -469,11 +470,25 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button2.Location = new System.Drawing.Point(21, 172);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 39);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Product";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // SellingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 678);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.SellerName);
@@ -532,5 +547,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

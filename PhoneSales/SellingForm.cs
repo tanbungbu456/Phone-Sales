@@ -273,6 +273,13 @@ namespace PhoneSales
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ProductForm form = new ProductForm();
+            form.Show();
+            this.Hide();
+        }
+
         private void button8_Click(object sender, EventArgs e)
         {
             if (ProdName.Text == "" || ProdQuantity.Text == "")
