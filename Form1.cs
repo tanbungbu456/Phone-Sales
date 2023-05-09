@@ -49,7 +49,19 @@ namespace PhoneSales
                 {
                     if (rolecb.SelectedItem.ToString() == "STAFF")
                     {
-                        if (usertb.Text == "Admin" && passtb.Text == "admin123")
+                        if (usertb.Text == "Admin1" && passtb.Text == "admin1123")
+                        {
+                            ProductForm Prod = new ProductForm();
+                            Prod.Show();
+                            this.Hide();
+                        }
+                        else if (usertb.Text == "Admin2" && passtb.Text == "admin2123")
+                        {
+                            ProductForm Prod = new ProductForm();
+                            Prod.Show();
+                            this.Hide();
+                        }
+                        else if (usertb.Text == "Admin3" && passtb.Text == "admin3123")
                         {
                             ProductForm Prod = new ProductForm();
                             Prod.Show();
@@ -59,6 +71,7 @@ namespace PhoneSales
                         {
                             MessageBox.Show("If you are the ADMIN, please enter the CORRECT UserName and PassWord");
                         }
+                        
                     }
                     else if (rolecb.SelectedItem.ToString() == "AGENT")
                     {
